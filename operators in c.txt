@@ -1,0 +1,55 @@
+program:3
+//arithmetic operators
+#include <stdio.h>
+void main()
+{
+       int a, b ;
+       printf("Enter two numbers");
+       scanf("%d %d", &a, &b);
+       printf("\n Addition of %d & %d is %d", a ,b , a + b);
+       printf("\n Subtraction of %d & %d is %d", a ,b, a-b);
+       printf("\n Multiplication of %d & %d is %d", a, b, a*b);
+       printf("\n division of %d & %d is %d", a ,b, a/b);
+       printf("\n remainder of %d & %d is %d", a, b, a % b);
+}
+//relational operators
+#include < stdio.h>
+void main()
+{ 
+  int  a, b ;
+  clrscr();
+  printf("Enter the values in a and b");
+  scanf("%d%d", &a, &b);
+  printf("Value of a>b is %d" ,a>b);
+  printf("Value of a < b is %d", a < b);
+  printf("Value of a<=b is %d", a <=b);
+  printf("value of a>=b is %d",  a >=b);
+  printf("Value of a!=b is %d", a!=b);
+  printf("Value of a==b is %d", a = =b);
+}
+//logical operators
+	 
+#include < stdio.h>
+void main()
+{
+     int x, y;
+     clrscr();
+     printf("Enter the vales in  x and y\n");
+     scanf("%d%d", &x, &y);
+     printf("Value of (x= =y)&&(x>y) is %d",(x= =y)&&(x>y));
+     printf("Value of (x==y)||(x>y) is %d", (x==y)||(x>y));
+     printf("Value of !((x>y)&&(x<=y)) is %d", !((x>y)&&(x<=y)));
+}
+/*SIZEOF OPERATER
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{ 
+   int a,b;
+   clrscr();
+   printf("%d",sizeof(a));
+   printf("%d",sizeof(b));
+   printf("%d",sizeof(a+b));
+   getch();
+} 
+

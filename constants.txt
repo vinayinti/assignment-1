@@ -1,0 +1,19 @@
+#include<stdio.h> 
+
+#define x 'f'
+#define y "Hello"
+
+
+int main(){    
+    const float PI=3.14; 
+    const char C = 'a';
+    
+    
+    // PI=4.5;  
+    //Compile Time Error: Cannot modify a const object
+    printf("The value of PI is: %f \n",PI);
+    printf("The character stored in C is: %c \n",C);
+    printf("The character stored in x is: %c \n",x);
+    printf("The word stored in y is: %s \n",y);    
+    return 0;  
+}

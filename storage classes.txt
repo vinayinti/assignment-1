@@ -1,0 +1,33 @@
+#include <stdio.h> 
+
+void next(void);
+
+extern int a = 2;
+
+static int counter = 7;
+
+int main() {
+    auto int b = 5;
+    printf("%d /n",b);
+    a = 3;
+    printf("%d /n",a);
+    
+    //register int  weight;
+    //int *ptr=&weight ;
+    
+    //it produces an error when the compilation occurs ,we cannot get a memory location when dealing with CPU register/
+    
+    while(counter<10)
+    {
+      next();
+      counter++;
+    }
+    return 0;
+}
+
+void next( void )
+{    /* function definition */
+   static int iteration = 13; /* local static variable */
+   iteration ++;
+   printf("iteration=%d and counter= %d\n", iteration, counter);
+}
